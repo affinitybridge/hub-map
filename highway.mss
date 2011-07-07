@@ -17,7 +17,7 @@
 @road: #fff;
 @track: @road;
 @footway: #fff;
-@cycleway: @forest;
+@cycleway: darken(@forest, 40);
 
 /* ---- ROAD COLORS ---- */
 
@@ -416,7 +416,7 @@
 
 #bikeways[zoom=16] {
   line-dasharray:2,4;
-  line-width:2.0;
+  line-width:2.1;
 }
 
 .highway[zoom=17] {
