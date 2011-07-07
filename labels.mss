@@ -51,6 +51,8 @@
   text-halo-fill:rgba(255,255,255,0.8);
   text-halo-radius:2;
   text-transform:uppercase;
+  text-wrap-width: 50;
+  text-line-spacing: 5;
   [zoom=11] {
     text-size:12;
     text-character-spacing:2;
@@ -72,6 +74,8 @@
   text-halo-fill:rgba(255,255,255,0.8);
   text-halo-radius:2;
   text-transform:uppercase;
+  text-wrap-width: 50;
+  text-line-spacing: 5;
   text-size:9;
   [zoom=11] {
     text-size:10;

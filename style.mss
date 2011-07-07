@@ -30,7 +30,7 @@ download it and run the following commands:
 @land:#D9D9D9;
 
 Map {
-  background-color:#B2B2B2;
+  background-color:darken(@water, 10);
 }
 
 .natural[TYPE='water'],
