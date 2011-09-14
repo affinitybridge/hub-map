@@ -1,8 +1,8 @@
 {
   "_center": {
-    "lat": 49.26494758383794,
-    "lon": -123.1212835013851,
-    "zoom": 16
+    "lat": 49.224267673810914,
+    "lon": -123.11450287699546,
+    "zoom": 12
   },
   "_format": "png",
   "_interactivity": false,
@@ -56,6 +56,17 @@
       "name": "state_line",
       "class": "",
       "geometry": "linestring"
+    },
+    {
+      "Datasource": {
+        "file": "http://localhost:8889/api/Library/data/files/FWRVRSPL.zip",
+        "type": "shape"
+      },
+      "srs": "+proj=aea +lat_1=50 +lat_2=58.5 +lat_0=45 +lon_0=-126 +x_0=1000000 +y_0=0 +ellps=GRS80 +datum=NAD83 +units=m +no_defs ",
+      "id": "rivers",
+      "name": "rivers",
+      "class": "water",
+      "geometry": "polygon"
     },
     {
       "Datasource": {
