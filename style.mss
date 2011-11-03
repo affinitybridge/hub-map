@@ -1,5 +1,32 @@
 /**********************************************************
 
+Open Streets BC
+===============
+
+This base map is based on TileMill's included Open Streets,
+DC but includes some extra data:
+
+Vancouver Open Data Catalogue
+-----------------------------
+
+Two sets of data from: http://data.vancouver.ca/datacatalogue/
+
+#bikeways - <ftp://webftp.vancouver.ca/OpenData/shape/bikeways_shp.zip>
+#park_polygons - <ftp://webftp.vancouver.ca/OpenData/shape/park_polygons_shp.zip>
+
+OpenStreetMap
+-------------
+
+We need shoreline information:
+
+#shoreline_300 - coarse data - <http://tile.openstreetmap.org/shoreline_300.tar.bz2>
+#processed_p - highly detailed data - <http://tile.openstreetmap.org/processed_p.tar.bz2>
+
+Following are the original instructions you may need to get
+OpenStreetMap data, you might need:
+
+<http://downloads.cloudmade.com/americas/northern_america/canada/british_columbia/british_columbia.shapefiles.zip>
+
 Open Streets, DC
 ================
 

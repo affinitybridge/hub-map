@@ -1,11 +1,19 @@
 {
-  "_center": {
-    "lat": 49.224267673810914,
-    "lon": -123.11450287699546,
-    "zoom": 12
-  },
-  "_format": "png",
-  "_interactivity": false,
+  "bounds": [
+    -180,
+    -85.05112877980659,
+    180,
+    85.05112877980659
+  ],
+  "center": [
+    -123.13819214701492,
+    49.26976419615254,
+    14
+  ],
+  "format": "png",
+  "interactivity": false,
+  "minzoom": 0,
+  "maxzoom": 22,
   "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
   "Stylesheet": [
     "style.mss",
@@ -15,8 +23,7 @@
   "Layer": [
     {
       "Datasource": {
-        "file": "http://localhost:8889/api/Library/data/files/shoreline_300.zip",
-        "type": "shape"
+        "file": "/Users/tylor/Documents/MapBox/data/shoreline_300.zip"
       },
       "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
       "id": "shoreline_300",
@@ -25,20 +32,18 @@
       "geometry": "polygon"
     },
     {
-      "Datasource": {
-        "file": "http://localhost:8889/api/Library/data/files/processed_p_correct.zip",
-        "type": "shape"
-      },
-      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
-      "id": "processed_p",
+      "geometry": "polygon",
       "name": "processed_p",
+      "id": "processed_p",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
       "class": "",
-      "geometry": "polygon"
+      "Datasource": {
+        "file": "/Users/tylor/Documents/MapBox/data/processed_p/processed_p_clean.shp"
+      }
     },
     {
       "Datasource": {
-        "file": "http://tilemill-data.s3.amazonaws.com/natural-earth-10m-1.3.0/admin_0_boundary_lines_land.zip",
-        "type": "shape"
+        "file": "http://tilemill-data.s3.amazonaws.com/natural-earth-10m-1.3.0/admin_0_boundary_lines_land.zip"
       },
       "srs": "",
       "id": "country_border",
@@ -48,8 +53,7 @@
     },
     {
       "Datasource": {
-        "file": "http://tilemill-data.s3.amazonaws.com/natural-earth-10m-1.3.0/admin_1_states_provinces_lines_shp.zip",
-        "type": "shape"
+        "file": "http://tilemill-data.s3.amazonaws.com/natural-earth-10m-1.3.0/admin_1_states_provinces_lines_shp.zip"
       },
       "srs": "",
       "id": "state_line",
@@ -59,8 +63,7 @@
     },
     {
       "Datasource": {
-        "file": "http://localhost:8889/api/Library/data/files/FWRVRSPL.zip",
-        "type": "shape"
+        "file": "/Users/tylor/Documents/MapBox/data/FWRVRSPL.zip"
       },
       "srs": "+proj=aea +lat_1=50 +lat_2=58.5 +lat_0=45 +lon_0=-126 +x_0=1000000 +y_0=0 +ellps=GRS80 +datum=NAD83 +units=m +no_defs ",
       "id": "rivers",
@@ -69,15 +72,14 @@
       "geometry": "polygon"
     },
     {
-      "Datasource": {
-        "file": "http://localhost:8889/api/Library/data/files/park_polygons_shp.zip",
-        "type": "shape"
-      },
-      "srs": "",
-      "id": "park_polygons",
+      "geometry": "polygon",
       "name": "park_polygons",
+      "id": "park_polygons",
+      "srs": "",
       "class": "",
-      "geometry": "polygon"
+      "Datasource": {
+        "file": "/Users/tylor/Documents/MapBox/data/park_polygons_shp.zip"
+      }
     },
     {
       "id": "natural",
@@ -85,8 +87,7 @@
       "srs": "",
       "class": "natural",
       "Datasource": {
-        "file": "http://localhost:8889/api/Library/data/files/canada_canada_british_columbia_natural.zip",
-        "type": "shape"
+        "file": "/Users/tylor/Documents/MapBox/data/canada_canada_british_columbia_natural.zip"
       },
       "geometry": "polygon"
     },
@@ -96,8 +97,7 @@
       "srs": "",
       "class": "highway line",
       "Datasource": {
-        "file": "http://localhost:8889/api/Library/data/files/canada_canada_british_columbia_highway.zip",
-        "type": "shape"
+        "file": "/Users/tylor/Documents/MapBox/data/canada_canada_british_columbia_highway.zip"
       },
       "geometry": "linestring"
     },
@@ -107,21 +107,19 @@
       "srs": "",
       "class": "highway fill",
       "Datasource": {
-        "file": "http://localhost:8889/api/Library/data/files/canada_canada_british_columbia_highway.zip",
-        "type": "shape"
+        "file": "/Users/tylor/Documents/MapBox/data/canada_canada_british_columbia_highway.zip"
       },
       "geometry": "linestring"
     },
     {
-      "Datasource": {
-        "file": "http://localhost:8889/api/Library/data/files/bikeways.zip",
-        "type": "shape"
-      },
-      "srs": "",
-      "id": "bikeways",
+      "geometry": "linestring",
       "name": "bikeways",
-      "class": "line",
-      "geometry": "linestring"
+      "id": "bikeways",
+      "srs": "",
+      "class": "",
+      "Datasource": {
+        "file": "/Users/tylor/Documents/MapBox/data/bikeways_shp.zip"
+      }
     },
     {
       "id": "location",
@@ -129,8 +127,7 @@
       "srs": "",
       "class": "location",
       "Datasource": {
-        "file": "http://localhost:8889/api/Library/data/files/canada_canada_british_columbia_location.zip",
-        "type": "shape"
+        "file": "/Users/tylor/Documents/MapBox/data/canada_canada_british_columbia_location.zip"
       },
       "geometry": "point"
     },
@@ -140,8 +137,7 @@
       "srs": "",
       "class": "highway-label",
       "Datasource": {
-        "file": "http://localhost:8889/api/Library/data/files/canada_canada_british_columbia_highway.zip",
-        "type": "shape"
+        "file": "/Users/tylor/Documents/MapBox/data/canada_canada_british_columbia_highway.zip"
       },
       "geometry": "linestring"
     }
